@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class PlayerReader {
+public class PlayerReader implements ohtuesimerkki.Reader{
 
     private Scanner scanner;
 
@@ -18,6 +18,7 @@ public class PlayerReader {
         }
     }
 
+    @Override
     public List<Player> getPlayers() {
         ArrayList<Player> players = new ArrayList<Player>();
 
@@ -28,7 +29,6 @@ public class PlayerReader {
                 players.add(new Player(parts[0].trim(), parts[1], extractInt(parts[3]), extractInt(parts[4])));
             }
         }
-
         return players;
     }
 

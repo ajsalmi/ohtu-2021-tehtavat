@@ -18,7 +18,7 @@ public class Laskin {
             if ( luku2==-9999 ) return;
             
             int vastaus = laskeSumma(luku1, luku2);
-            io.print("summa: "+vastaus+"\n");
+            io.print("summa: "+vastaus+"\n\n");
         }
     }
 

@@ -1,6 +1,6 @@
 package ohtu;
 
-import ohtu.laskin.KonsoliIO;
+import ohtu.laskin.*;
 
 public class Main {
     public static void main(String[] args) {
